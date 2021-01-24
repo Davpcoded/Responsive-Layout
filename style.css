@@ -71,6 +71,24 @@ img {
   padding: 20px;
   margin: 10px;
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px white solid;
+}
+.btn:hover {
+  transform: scale(0.95);
+}
 /* NAVBAR STYLE */
 .navbar {
   background-color: var(--primary-color);
@@ -110,6 +128,7 @@ img {
 }
 
 .showcase .grid {
+  overflow: visible;
   grid-template-columns: 55% 45%;
 }
 
@@ -117,4 +136,25 @@ img {
   position: relative;
   top: 60px;
   height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
 }
