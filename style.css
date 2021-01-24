@@ -4,6 +4,7 @@
 }
 
 /* Initial Style */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -89,6 +90,7 @@ img {
 .btn:hover {
   transform: scale(0.95);
 }
+
 /* NAVBAR STYLE */
 .navbar {
   background-color: var(--primary-color);
@@ -157,4 +159,19 @@ img {
 
 .showcase-form input:focus {
   outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -55px;
+  right: 0;
+  left: 0;
+  background: white;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-tranform: skewY(-3deg);
 }
