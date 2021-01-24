@@ -54,6 +54,14 @@ img {
   height: 100%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 /* NAVBAR STYLE */
 .navbar {
   background-color: var(--primary-color);
@@ -80,4 +88,18 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
+  color: white;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
 }
